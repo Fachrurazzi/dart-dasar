@@ -1,12 +1,9 @@
 import 'hewan.dart';
+import 'mixin/terbang.dart';
 
-class Burung extends Hewan {
+class Burung extends Hewan with Terbang {
   int jumlahKaki;
-  int? kecepatanTerbang;
 
-  Burung(
-      {required this.jumlahKaki,
-      required this.kecepatanTerbang,
-      required int berat})
+  Burung({required this.jumlahKaki, required int berat})
       : super(nama: "Pipit", kategori: "Burung", berat: berat);
 }
